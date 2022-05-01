@@ -39,18 +39,7 @@ def main():
 
     relay.on()
     time.sleep(5)
-    relay.off()
-
-    '''while True:
-        try:
-            relay.on()
-            time.sleep(5)
-            relay.off()
-            time.sleep(1)
-        except KeyboardInterrupt:
-            relay.off()
-            print("exit")
-            exit(1)'''         
+    relay.off()   
 
 if __name__ == '__main__':
     main()
