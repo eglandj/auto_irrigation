@@ -113,17 +113,18 @@ def main():
     sh = SlotHelper(SlotHelper.ADC)
     pin = 0
 
-    MQTT_HOST = 'localhost'
-    MQTT_PORT = 1883
-    MQTT_CLIENT_ID = 'Python-MQTT-client'
-    MQTT_USER = 'user'
-    MQTT_PASSWORD = 'password'
-    TOPIC = 'soil moisture reading'
+    # Used to connect the soil moisture data to NodeRed
+    # MQTT_HOST = 'localhost'
+    # MQTT_PORT = 1883
+    # MQTT_CLIENT_ID = 'Python-MQTT-client'
+    # MQTT_USER = 'user'
+    # MQTT_PASSWORD = 'password'
+    # TOPIC = 'soil moisture reading'
 
-    client = paho.Client(MQTT_CLIENT_ID)
+    # client = paho.Client(MQTT_CLIENT_ID)
 
-    client.username_pw_set(MQTT_USER, MQTT_PASSWORD)
-    client.connect(MQTT_HOST, MQTT_PORT)
+    # client.username_pw_set(MQTT_USER, MQTT_PASSWORD)
+    # client.connect(MQTT_HOST, MQTT_PORT)
 
     sensor = GroveMoistureSensor(pin)
 
