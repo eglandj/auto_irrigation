@@ -36,7 +36,7 @@ Examples:
 import math
 import sys
 import time
-import test
+import runPump
 from grove.adc import ADC
 import paho.mqtt.client as paho
 from grove.gpio import GPIO
