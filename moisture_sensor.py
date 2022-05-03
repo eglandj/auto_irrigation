@@ -170,7 +170,7 @@ def main():
         test = 'Soil Moisture: {0:.2%}, {1}'.format(m, result)
         #client.publish(TOPIC, test)
         print(dryCount)
-        time.sleep(5)
+        time.sleep(30)
 
 if __name__ == '__main__':
     main()
