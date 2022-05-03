@@ -104,7 +104,7 @@ def runPump():
     relay = GroveRelay(pin)
 
     relay.on()
-    time.sleep(2.5)
+    time.sleep(5)
     relay.off()
 
 
@@ -170,7 +170,7 @@ def main():
         test = 'Soil Moisture: {0:.2%}, {1}'.format(m, result)
         #client.publish(TOPIC, test)
         print(dryCount)
-        time.sleep(30)
+        time.sleep(5)
 
 if __name__ == '__main__':
     main()
