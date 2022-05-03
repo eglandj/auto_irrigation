@@ -38,7 +38,7 @@ import sys
 import time
 import runPump
 from grove.adc import ADC
-import paho.mqtt.client as paho
+#import paho.mqtt.client as paho
 from grove.gpio import GPIO
 
 __all__ = ["GroveMoistureSensor"]
